@@ -3,7 +3,7 @@ body {
   font-family: 'Avenir Next', sans-serif;
   color: #25253B;
   transition-timing-function: transform cubic-bezier(.3,.53,.99,.76);
-  animation: pulse 30s infinite, fadeInTop .6s;
+  animation: pulse 30s infinite;
 }
 
 * {
@@ -27,6 +27,7 @@ p{
 .mainheader{
   width: 100%;
   height: 100vh;
+  animation: fadeInTop .6s;
 }
 .mainheader__nav{
   width: 100%;
@@ -82,6 +83,7 @@ p{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  animation: fadeIn .6s;
 }
 
 .otherarticles{
@@ -99,6 +101,7 @@ p{
   padding: 60px 40px;
   font-size: 1.5em;
   background: white;
+  animation: fadeIn .6s;
 }
 
 .mainarticle--half{
@@ -108,7 +111,7 @@ p{
   transition: .2s cubic-bezier(.3,.53,.99,.76);
 }
 .mainarticle--half:hover{
-  box-shadow: 0 10px 10px rgba(50,50,50,.5);
+  box-shadow: 0 10px 10px rgba(50,50,50,.15);
   transform: translateY(-10px);
 }
 .mainarticle--half:nth-of-type(1),
@@ -193,6 +196,7 @@ p{
   justify-content: space-between;
   align-items: center;
   transition: .2s cubic-bezier(.3,.53,.99,.76);
+  animation: fadeInTopFooter .6s;
 }
 .mainfooter:hover{
   opacity: 1;
@@ -253,6 +257,17 @@ p{
 @keyframes fadeInTop {
     from {transform: translateY(70%); opacity: 0;}
     to {background: translateY(0%); opacity: 1;}
+}
+
+
+@keyframes fadeInTopFooter {
+    from {transform: translateY(70%); opacity: 0;}
+    to {background: translateY(0%); opacity: .5;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 
