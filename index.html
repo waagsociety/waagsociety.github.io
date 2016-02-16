@@ -2,6 +2,7 @@
 <html>
   <head>
     <link type="text/css" rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 		<title>Waag Society</title>
 	</head>
   <body>
@@ -14,14 +15,14 @@
             <a href="https://waag.org">Waag society</a>
           </li>
           <li class="mainheader__nav__li">
-            <a href="#">Contact</a>
+            <a href="http://waag.org/nl/contact">Contact</a>
           </li>
         </ul>
       </nav>
       <hgroup>
         <h1 class="mainheader__title">We're Waag Society, <span class="mainheader__title--change">We Code</span></h1>
       </hgroup>
-      <div class="mainheader__scrollbtn">
+      <div id="scrollbtn" class="mainheader__scrollbtn">
         <svg class="mainheader__scrollbtn__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
         <style type="text/css">
@@ -39,7 +40,7 @@
 
 
 
-    <main>
+    <main id="mainitems">
       <article class="mainarticle">
         <header class="mainarticle__articleheader">
           <h1>Transparant Nederland</h1>
@@ -47,21 +48,7 @@
         <section class="mainarticle__articlebody">
           <div class="mainarticle__articlebody__inner">
             <p>Transparant Nederland faciliteert permanent netwerkanalyses door inzichtelijk te maken hoe de bestuurlijke macht in Nederland werkt op basis van (open) data van personen, organisaties en relaties.</p>
-            <a href="#">CHECK OUT THE CODE</a>
-          </div>
-        </section>
-        <figure class="mainarticle__image">
-          <img src="transparantnl.jpg" />
-        </figure>
-      </article>
-      <article class="mainarticle">
-        <header class="mainarticle__articleheader">
-          <h1>Transparant Nederland</h1>
-        </header>
-        <section class="mainarticle__articlebody">
-          <div class="mainarticle__articlebody__inner">
-            <p>Transparant Nederland faciliteert permanent netwerkanalyses door inzichtelijk te maken hoe de bestuurlijke macht in Nederland werkt op basis van (open) data van personen, organisaties en relaties.</p>
-            <a href="#">CHECK OUT THE CODE</a>
+            <a href="https://github.com/transparantnederland">CHECK OUT THE CODE</a>
           </div>
         </section>
         <figure class="mainarticle__image">
@@ -70,7 +57,22 @@
       </article>
     </main>
 
+<script>
 
+  // document.getElementById("scrollbtn").addEventListener("click", scroll);
+  //
+  // var mainitems = document.getElementById('mainitems');
+  // function scroll(){
+  //   mainitems.scrollIntoView({behavior: "smooth"});
+  // }
+
+  $("#scrollbtn").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#mainitems").offset().top
+      }, 500);
+  });
+
+</script>
 
 
   </body>
