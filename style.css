@@ -467,6 +467,7 @@ p{
   }
   .mainheader__title{
     left: 40px;
+    top: 45%;
     display: block;
     -webkit-transform: none;
         -ms-transform: none;
