@@ -349,11 +349,14 @@ p{
     font-size: .875em;
     left: 0;
   }
-  .mainheader__title{
-    left: 50%;
-    transform: translate(-50%, -50%);
+  .mainheader__nav{
+    padding: 30px;
   }
   .mainheader__title{
-    font-size: 1.2em;
+    left: 40px;
+    display: block;
+    transform: none;
+    max-width: 80%;
+    font-size: 1.5em;
   }
 }
