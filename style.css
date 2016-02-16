@@ -433,7 +433,9 @@ p{
   .mainarticle__articlebody{
     padding-bottom: 30px;
   }
-
+  .mainarticle__articlebody p{
+    width: 100%;
+  }
   .otherarticles__header{
     font-size: 1em;
   }
