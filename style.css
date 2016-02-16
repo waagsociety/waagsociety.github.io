@@ -2,9 +2,8 @@ body {
   background-color: white;
   font-family: 'Avenir Next', sans-serif;
   color: #25253B;
-  animation-name: pulse;
-  animation-duration: 30s;
-  animation-iteration-count: infinite;
+  transition-timing-function: transform cubic-bezier(.3,.53,.99,.76);
+  animation: pulse 30s infinite, fadeInTop .6s;
 }
 
 * {
@@ -52,7 +51,7 @@ p{
   left: 150px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 5em;
+  font-size: 4em;
 }
 .mainheader__title--change{
   border-bottom: 4px solid #25253B;
@@ -248,6 +247,12 @@ p{
     40% {background: #D9F9C5;}
     70% {background: #EEFFE4;}
     90% {background: #BFF3A0;}
+}
+
+
+@keyframes fadeInTop {
+    from {transform: translateY(70%); opacity: 0;}
+    to {background: translateY(0%); opacity: 1;}
 }
 
 
