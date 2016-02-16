@@ -1,31 +1,122 @@
 body {
   background-color: white;
+  font-family: 'Avenir Next', sans-serif;
+  color: #25253B;
+  animation-name: pulse;
+  animation-duration: 30s;
 }
 
 * {
 	margin: 0;
 	padding: 0;
+  box-sizing: border-box;
 }
 
-span {
-	width: 125px;
-	position: relative;
+a{
+  text-decoration: none;
+  color: #FF6565;
+  font-weight: bold;
+}
+p{
+  line-height: 1.678em;
 }
 
-div#centered {
-	height: 100%;
-	width: 100%;
-	position: fixed;
-	display: table;
+.mainheader{
+  width: 100%;
+  height: 100vh;
+}
+.mainheader__nav{
+  width: 100%;
+  display: flex;
+  padding: 30px 50px;
+  justify-content: space-between;
+}
+.mainheader__nav__li{
+  display: inline;
+}
+.mainheader__nav__li a{
+  text-decoration: none;
+  color: #25253B;
+}
+.mainheader__nav__li--logo a{
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-div#centered p {
-	display: table-cell;
-  vertical-align: middle;
+.mainheader__title{
+  position: absolute;
+  left: 150px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.mainheader__title--change{
+  border-bottom: 4px solid #25253B;
 }
 
-div#centered p img {
-	display: block;
-	margin-left: auto;
-  margin-right: auto;
+.mainheader__scrollbtn{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 50%;
+  bottom: 50px;
+  opacity: .5;
+  transform: translateX(-50%) scale(1);
+  color: #000;
+  cursor: pointer;
+  transition: transform .2s cubic-bezier(.3,.53,.99,.76);
+  transform-origin: center;
+}
+.mainheader__scrollbtn:hover{
+  transform: translateX(-50%) scale(1.2);
+}
+.mainheader__scrollbtn__svg{
+  width: 40px;
+  margin-right: 10px;
+}
+
+.mainarticle{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: white;
+  height: 100%;
+}
+.mainarticle__articleheader{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding: 80px;
+}
+.mainarticle__articlebody{
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.mainarticle__articlebody p{
+  width: 80%;
+}
+
+.mainarticle__articlebody__inner{
+  width: 100%;
+}
+.mainarticle__articlebody__inner p{
+  margin-bottom: 10px;
+}
+.mainarticle__image{
+  width: 100%;
+}
+
+.mainarticle__image img{
+  width: 100%;
+}
+
+
+
+@keyframes pulse {
+    10% {background: #CBEDB6;}
+    40% {background: #D9F9C5;}
+    70% {background: #EEFFE4;}
+    90% {background: #BFF3A0;}
 }
