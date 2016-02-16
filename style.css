@@ -85,6 +85,7 @@ p{
 .mainheader__scrollbtn__svg{
   width: 40px;
   margin-right: 10px;
+  top: -2px
 }
 
 .mainarticle{
@@ -111,6 +112,7 @@ p{
   background: white;
   animation: fadeIn .6s;
 }
+
 
 .mainarticle--half{
   width: 49%;
@@ -150,6 +152,31 @@ p{
   background: white;
   padding: 80px;
 }
+
+.mainarticle__articleheader h1{
+  margin-bottom: .2em
+}
+.mainarticle__articleheader__list{
+  width: 100%;
+}
+.mainarticle__articleheader__list li{
+  display: inline;
+}
+.mainarticle__articleheader__list li a{
+  transition: .2s cubic-bezier(.3,.53,.99,.76);
+  border-bottom: 2px solid white;
+}
+.mainarticle__articleheader__list li a:hover{
+  border-bottom: 2px solid red;
+}
+.mainarticle__articleheader__list li:after{
+  content: " -";
+  margin: 0 5px;
+}
+.mainarticle__articleheader__list li:last-child:after{
+  content: "";
+}
+
 .mainarticle__articlebody{
   width: 50%;
   padding: 60px 80px;
