@@ -4,6 +4,7 @@ body {
   color: #25253B;
   animation-name: pulse;
   animation-duration: 30s;
+  animation-iteration-count: infinite;
 }
 
 * {
@@ -106,6 +107,7 @@ p{
 }
 .mainarticle__image{
   width: 100%;
+  line-height: 0;
 }
 
 .mainarticle__image img{
