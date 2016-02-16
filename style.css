@@ -244,7 +244,7 @@ p{
 }
 
 @keyframes pulse {
-    10% {background: #CBEDB6;}
+    0% {background: #CBEDB6;}
     40% {background: #D9F9C5;}
     70% {background: #EEFFE4;}
     90% {background: #BFF3A0;}
