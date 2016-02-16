@@ -17,6 +17,7 @@ a{
   text-decoration: none;
   color: #FF6565;
   font-weight: bold;
+  display: inline-block;
 }
 p{
   line-height: 1.678em;
@@ -101,6 +102,22 @@ p{
 
 .mainarticle__articlebody__inner{
   width: 100%;
+}
+.mainarticle__articlebody__inner a{
+  transition: .2s cubic-bezier(.3,.53,.99,.76);
+  opacity: .8;
+}
+.mainarticle__articlebody__inner a:hover{
+  opacity: 1;
+}
+.mainarticle__articlebody__inner a span{
+  transition: .2s cubic-bezier(.3,.53,.99,.76);
+  display: inline-block;
+  transform-origin: left center;
+}
+.mainarticle__articlebody__inner a:hover span{
+  transform: scale(1.7) translateX(5px);
+
 }
 .mainarticle__articlebody__inner p{
   margin-bottom: 10px;
