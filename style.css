@@ -2,8 +2,12 @@ body {
   background-color: white;
   font-family: 'Avenir Next', sans-serif;
   color: #25253B;
-  transition-timing-function: transform cubic-bezier(.3,.53,.99,.76);
-  animation: pulse 30s infinite;
+
+  animation-name: pulse;
+  animation-duration: 30s;
+  animation-timing-function: cubic-bezier(.3,.53,.99,.76);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 * {
@@ -41,6 +45,10 @@ p{
 .mainheader__nav__li a{
   text-decoration: none;
   color: #25253B;
+  transition: transform .1s cubic-bezier(.3,.53,.99,.76);
+}
+.mainheader__nav__li a:hover{
+  transform: scale(1.1);
 }
 .mainheader__nav__li--logo a{
   text-transform: uppercase;
