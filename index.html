@@ -5,7 +5,26 @@
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Waag Society</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-title" content="codewaag">
+    <meta name="application-name" content="codewaag">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+		<title>code.waag</title>
 	</head>
   <body>
 
@@ -22,7 +41,7 @@
         </ul>
       </nav>
       <hgroup>
-        <h1 class="mainheader__title">We're Waag Society, <span class="mainheader__title--change"></span></h1>
+        <h1 class="mainheader__title">We're Waag Society, <span class="mainheader__title--change changetext">we code.</span></h1>
       </hgroup>
       <div id="scrollbtn" class="mainheader__scrollbtn">
         <svg class="mainheader__scrollbtn__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -36,7 +55,7 @@
         	<polyline class="st1" points="76.3,40.7 50,67 50,67 23.7,40.7 	"/>
         </g>
         </svg>
-        <span>Explore our CODE</span>
+        <span>Explore the code</span>
       </div>
     </header>
 
@@ -313,14 +332,6 @@
   </footer>
 
 <script>
-
-  // document.getElementById("scrollbtn").addEventListener("click", scroll);
-  //
-  // var mainitems = document.getElementById('mainitems');
-  // function scroll(){
-  //   mainitems.scrollIntoView({behavior: "smooth"});
-  // }
-
   $("#scrollbtn").click(function() {
       $('html, body').animate({
           scrollTop: $("#mainitems").offset().top
@@ -328,7 +339,7 @@
   });
 
   $(function(){
-      $(".mainheader__title--change").typed({
+      $(".changetext").typed({
         strings: ["we code.", "we make.", "we learn.", "we care.", "we design."],
         typeSpeed: 200,
         backSpeed: 100,
