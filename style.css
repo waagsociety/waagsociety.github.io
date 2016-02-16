@@ -351,10 +351,10 @@ p{
   }
   .mainheader__title{
     left: 50%;
-    width: 80%;
+    width: 90%;
     transform: translate(-50%, -50%);
   }
   .mainheader__title{
-    font-size: 2em;
+    font-size: 1.2em;
   }
 }
