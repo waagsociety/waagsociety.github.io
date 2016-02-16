@@ -22,7 +22,9 @@ a{
 p{
   line-height: 1.678em;
 }
-
+#mainitems{
+  padding-bottom: 50px;
+}
 .mainheader{
   width: 100%;
   height: 100vh;
@@ -80,18 +82,67 @@ p{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.otherarticles{
+  padding: 40px;
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.otherarticles__header{
+  text-align: center;
+  width: 100%;
+  padding: 60px 40px;
+  font-size: 1.5em;
   background: white;
-  height: 100%;
+}
+
+.mainarticle--half{
+  width: 49%;
+  margin-top: 2%;
+  float: left;
+  transition: .2s cubic-bezier(.3,.53,.99,.76);
+}
+.mainarticle--half:hover{
+  box-shadow: 0 10px 10px rgba(50,50,50,.5);
+  transform: translateY(-10px);
+}
+.mainarticle--half:nth-of-type(1),
+.mainarticle--half:nth-of-type(2){
+  margin-top: 0;
+}
+
+.mainarticle--half .mainarticle__articleheader{
+  width: 50%;
+  padding: 40px;
+  display: block;
+}
+.mainarticle--half .mainarticle__articleheader h1,
+.mainarticle--half .mainarticle__articleheader a{
+  width: 100%;
+  display: inline;
+  margin-bottom: .2em;
+  float: left;
+  clear: right;
+}
+.mainarticle--half figure{
+  width: 50%;
 }
 .mainarticle__articleheader{
   width: 50%;
   display: flex;
   align-items: center;
+  background: white;
   padding: 80px;
 }
 .mainarticle__articlebody{
   width: 50%;
-  padding: 40px;
+  padding: 60px 80px;
+  background: white;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -131,11 +182,97 @@ p{
   width: 100%;
 }
 
+.mainfooter{
+  width: 100%;
+  position: relative;
+  opacity: .5;
+  padding: 20px 40px 40px;
+  color: #333;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: .2s cubic-bezier(.3,.53,.99,.76);
+}
+.mainfooter:hover{
+  opacity: 1;
+}
+.mainfooter svg{
+  display: block;
+  width:150px;
+}
 
+.mainfooter rect, .mainfooter .st0{
+  fill: #000;
+  stroke: none;
+}
+
+.mainfooter .st1{
+  fill: #fff;
+  stroke: none;
+}
+
+
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
 
 @keyframes pulse {
     10% {background: #CBEDB6;}
     40% {background: #D9F9C5;}
     70% {background: #EEFFE4;}
     90% {background: #BFF3A0;}
+}
+
+
+
+@media (max-width:768px){
+  .mainfooter,
+  .mainarticle__articlebody,
+  .mainarticle__articleheader{
+    width: 100%;
+  }
+  .mainarticle__articlebody,
+  .mainarticle__articleheader{
+    padding: 30px 30px 0;
+  }
+  .mainarticle__articlebody{
+    padding-bottom: 30px;
+  }
+
+  .otherarticles__header{
+    font-size: 1em;
+  }
+
+  .otherarticles{
+    padding: 30px;
+  }
+  .mainarticle--half{
+    width: 99%
+  }
+  .mainarticle--half .mainarticle__articleheader{
+    width: 100%;
+  }
+  .mainarticle--half figure{
+    width: 100%;
+  }
+  .mainarticle--half{
+    margin-bottom: 30px;
+  }
+  .mainfooter__waaglogo{
+    display: none;
+  }
+  .mainfooter{
+    display: block;
+    padding: 0 30px 30px;
+    font-size: .875em;
+    left: 0;
+  }
+  .mainheader__title{
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
