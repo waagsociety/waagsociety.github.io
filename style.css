@@ -261,6 +261,10 @@ p{
 .mainarticle__articlebody__inner{
   width: 100%;
 }
+.mainarticle__articlebody__inner h6{
+  font-size: 1em;
+  font-weight: 400;
+}
 .mainarticle__articlebody__inner a{
   -webkit-transition: .2s cubic-bezier(.3,.53,.99,.76);
           transition: .2s cubic-bezier(.3,.53,.99,.76);
