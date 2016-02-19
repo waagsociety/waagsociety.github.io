@@ -72,10 +72,6 @@ h1{
       -ms-transform: scale(1.1);
           transform: scale(1.1);
 }
-.mainheader__nav__li--logo a{
-  text-transform: uppercase;
-  font-weight: bold;
-}
 
 .mainheader__title{
   position: absolute;
@@ -505,6 +501,7 @@ h1{
   .mainheader__title{
     left: 40px;
     top: 45%;
+    line-height: 1em;
     display: block;
     -webkit-transform: none;
         -ms-transform: none;
