@@ -1,6 +1,6 @@
 body {
   background-color: white;
-  font-family: 'Avenir Next', sans-serif;
+  font-family: 'Avenir Next', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
   color: #25253B;
 
   -webkit-animation-name: pulse;
@@ -138,7 +138,6 @@ p{
 }
 
 .otherarticles{
-  padding: 40px;
   width: 100%;
   float: left;
   display: -webkit-box;
@@ -152,6 +151,9 @@ p{
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+}
+.otherarticles .inner{
+  padding: 40px;
 }
 
 .otherarticles__header{
@@ -445,7 +447,7 @@ p{
   }
 
   .otherarticles{
-    padding: 30px;
+    /*padding: 30px;*/
   }
   .mainarticle--half{
     width: 99%
