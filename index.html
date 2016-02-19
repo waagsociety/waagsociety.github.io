@@ -27,8 +27,6 @@
 		<title>code.waag</title>
 	</head>
   <body>
-
-
     <header class="mainheader">
       <nav>
         <ul class="mainheader__nav">
@@ -344,7 +342,10 @@
       $(".changetext").typed({
         strings: ["we make.", "we learn.", "we care.", "we design.", "we code."],
         typeSpeed: 200,
-        backSpeed: 100
+        backSpeed: 100,
+        callback: function() {
+          $(".mainheader__scrollbtn").addClass("pulse");
+        }
       });
   });
 
