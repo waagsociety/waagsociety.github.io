@@ -32,7 +32,7 @@ body{
   line-height: 1.678em;
 }
 h1{
-  font-family: 'BalanceComp-Black', 'Lucida Grande', Verdana, sans-serif;
+  font-family: 'BalanceComp-Bold', 'Lucida Grande', Verdana, sans-serif;
   font-weight: bold;
 }
 #mainitems{
@@ -58,7 +58,7 @@ h1{
 }
 .mainheader__nav__li{
   display: inline;
-    font-family: 'BalanceComp-Black', 'Lucida Grande', Verdana, sans-serif;
+    font-family: 'BalanceComp-Bold', 'Lucida Grande', Verdana, sans-serif;
     font-weight: bold;
 }
 .mainheader__nav__li a{
