@@ -177,6 +177,7 @@ h1{
 .otherarticles__header{
   text-align: center;
   width: 100%;
+  line-height: 2em;
   padding: 60px 40px;
   font-size: 1.5em;
   background: white;
@@ -184,30 +185,12 @@ h1{
           animation: fadeIn .6s;
 }
 
-
-.mainarticle--half{
-  width: 49%;
-  margin-top: 2%;
-  float: left;
-  -webkit-transition: .2s cubic-bezier(.3,.53,.99,.76);
-          transition: .2s cubic-bezier(.3,.53,.99,.76);
-}
-.mainarticle--half:hover{
-  box-shadow: 0 10px 10px rgba(50,50,50,.15);
-  -webkit-transform: translateY(-10px);
-      -ms-transform: translateY(-10px);
-          transform: translateY(-10px);
-}
-.mainarticle--half:nth-of-type(1),
-.mainarticle--half:nth-of-type(2){
-  margin-top: 0;
-}
-
 .mainarticle--half .mainarticle__articleheader{
-  width: 50%;
+  width: 100%;
   padding: 40px;
   display: block;
 }
+
 .mainarticle--half .mainarticle__articleheader h1,
 .mainarticle--half .mainarticle__articleheader a{
   width: 100%;
@@ -216,9 +199,11 @@ h1{
   float: left;
   clear: right;
 }
+
 .mainarticle--half figure{
-  width: 50%;
+  width: 100%;
 }
+
 .mainarticle__articleheader{
   width: 50%;
   display: -webkit-box;
@@ -373,6 +358,40 @@ h1{
   float: right;
 }
 
+
+
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.mainarticle--half {
+  background: white;
+  margin: 20px;
+  width: calc(50% - 40px);
+}
+
+.mainarticle--half h2 {
+  margin-bottom: 1em;
+}
+
+.mainarticle--half p {
+  margin-bottom: 1em;
+}
+
+.otherarticles .mainarticle__articleheader__list li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.otherarticles .mainarticle__articleheader__list li:after {
+  display: none;
+}
+
 .typed-cursor{
     opacity: 1;
     filter: alpha(opacity=100);
@@ -447,6 +466,12 @@ h1{
 }
 
 
+@media (max-width:1000px){ 
+  .mainarticle--half {
+    width: 100%;
+  }
+}
+
 
 @media (max-width:768px){
   .mainheader{
@@ -474,9 +499,6 @@ h1{
 
   .otherarticles{
     /*padding: 30px;*/
-  }
-  .mainarticle--half{
-    width: 99%
   }
   .mainarticle--half .mainarticle__articleheader{
     width: 100%;
